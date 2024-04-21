@@ -1,0 +1,54 @@
+/* Homepage */
+
+
+.bg{
+  /* width: 100%; */
+  height: 83vh;
+  background-color: red;
+  margin: 0;
+  padding-top: 3.93rem;
+  padding-bottom: 3.93rem;
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
+  overflow-y: hidden;
+}
+.edge{
+  height: inherit;
+  width: inherit;
+  border-radius: 1.25rem;
+  border: 0.313rem solid white;
+}
+.main{
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav{
+  display: static;
+}
+.nav1{
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav2{
+  justify-content: space-between;
+}
+li{
+  float: left;
+}
+li a{
+  padding-right: 1rem;
+}
+.first{
+  float: left;
+  background-color: blue;
+  width: 50%;
+  height: 74.69vh;
+  border-radius: 0rem 0rem 0rem 0.9rem;
+}
+.second{
+  background-color: green;
+  height: 74.69vh;
+  border-radius: 0rem 0rem 0.9rem 0.9rem;
+}
