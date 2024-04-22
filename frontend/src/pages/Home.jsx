@@ -29,7 +29,7 @@ const Home=()=>{
                         <p><span className="down-info">A progression of rare and beautiful ingredients.</span></p>
                         <br/>
                         <button className="book-btn ">Book a Table</button>
-                        <button className="menu-btn">Menu</button>
+                        <button className="menu-btn">Menu &#8594;</button>
                     </div>
                     <div className="second">
                         
