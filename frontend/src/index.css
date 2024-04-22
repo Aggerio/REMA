@@ -6,6 +6,7 @@ body{
   font-family: 'Poppins',Helvetica, sans-serif;
   /* background-color: #000000; */
    color: white;
+   margin: 0;
 }
 
 .bg{
@@ -44,7 +45,7 @@ body{
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  z-index: 2;
+  z-index: 10000;
   display: flex;
 }
 .nav{
@@ -99,7 +100,7 @@ li a{
   font-weight: bold;
   font-size: 1.1rem;
   border-radius: 0.7rem;
-  border: 3px solid white;
+  border: 3px solid black;
   background-color: white;
   transition: 0.3s;
 
