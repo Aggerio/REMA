@@ -84,7 +84,9 @@ li{
 }
 li:hover{
   background-color: black;
+  /* backdrop-filter: blur(5px); */
   transition: 0.3s;
+  opacity:  0.8;
 
 }
 li a{
