@@ -7,6 +7,7 @@ body{
   /* background-color: #000000; */
    color: white;
    margin: 0;
+   overflow: hidden;
 }
 
 .bg{
@@ -15,7 +16,7 @@ body{
   background-image: url('wallpapersden.com_surviving-alone-4k_1336x768.jpg');
   
   margin: 0;
-  padding-top: 3.93rem;
+  padding-top: 1.03rem;
   padding-bottom: 3.93rem;
   padding-left: 3.25rem;
   padding-right: 3.25rem;
@@ -50,6 +51,8 @@ body{
 }
 .nav{
   display: static;
+  color: white;
+  font-size: 1.5rem;
 }
 .nav1{
   display: flex;
@@ -59,11 +62,33 @@ body{
 .nav2{
   justify-content: space-between;
 }
+.logo{
+  align-self: center;
+}
+a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover{
+  color: orange;
+  transition: 0.3s;
+}
+
 li{
   float: left;
+  transition: 0.3s;
+  padding: 0.2rem;
+  border-radius: 3rem;
+
+}
+li:hover{
+  background-color: black;
+  transition: 0.3s;
+
 }
 li a{
-  padding-right: 1rem;
+  padding-right: 1.4rem;
 }
 .first{
   /* float: left; */
@@ -122,6 +147,8 @@ li a{
   background-image: url('second.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 10px 0px 20px black;
+
   height: 76.89vh;
   width: 50%;
   border-radius: 0rem 0.9rem 0.9rem 0rem;
