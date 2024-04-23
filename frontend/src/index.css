@@ -7,7 +7,7 @@ body{
   /* background-color: #000000; */
    color: white;
    margin: 0;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 .bg{
@@ -80,6 +80,7 @@ li{
   transition: 0.3s;
   padding: 0.2rem;
   border-radius: 3rem;
+  /* font-weight: bold; */
 
 }
 li:hover{
