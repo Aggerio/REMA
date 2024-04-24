@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./RestoPage.module.css";
 import CentralNavbar from "../components/CentralNavbar";
+import RestaurantCard from "../components/RestaurantCard";
 
 export default function RestoPage() {
   return (
@@ -50,11 +51,28 @@ export default function RestoPage() {
           </div>
         </div>
         <br></br>
-        <div>yo</div>
+        <div>
+        <RestaurantCard 
+        rest_id="1"
+        rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+        rest_name="Chicken-tikka"
+        rest_distance="0.8km"
+        rest_rating="4 stars"
+        />
+        <RestaurantCard 
+        rest_id="1"
+        rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+        rest_name="Vellore Restaurant 1"
+        rest_distance="0.8km"
+        rest_rating="4 stars"
+        />
+        </div>
       </div>
       {/* orders section */}
 
-      <div className={styles.orders}>kuch bhi</div>
+      <div className={styles.orders}>
+       
+      </div>
     </div>
     
   );
