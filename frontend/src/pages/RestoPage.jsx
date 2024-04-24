@@ -71,7 +71,7 @@ export default function RestoPage() {
       {/* orders section */}
 
       <div className={styles.orders}>
-       
+       yo
       </div>
     </div>
     
