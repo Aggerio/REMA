@@ -23,20 +23,23 @@
 // export default App;
 
 import React from "react";
-import RestaurantCard from "./components/RestaurantCard";
+import RestaurantPage from "./pages/RestaurantPage";
 import Home from "./pages/Home";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AllRestaurants from "./pages/AllRestaurants";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<RestaurantCard />} />
+        <Route path="/" element={<Home/>} />
+        <Route
+          path="/restaurants"
+          element={
+            < AllRestaurants/>
+          }
+        />
+        <Route path="/restaurant/:id" element={<RestaurantPage />} />
       </Routes>
     </Router>
   );
