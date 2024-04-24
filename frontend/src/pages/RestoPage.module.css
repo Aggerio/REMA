@@ -1,0 +1,49 @@
+.main{
+    background-color: #393c49;
+    width: 70vw;
+    height: 100vh;
+    padding-left: 9%;
+    color: white;
+    padding-top: 1%;
+    padding-right: 1%;
+    /* display: flex; */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.date{
+    color: gray;
+}
+.input{
+    color: black;
+}
+.options li{
+    padding-right: 2.5rem;
+}
+.option_name{
+    color: #EA7C69;
+}
+.linebreak{
+    color: gray;
+}
+.title2{
+    display: flex;
+    justify-content: space-between;
+}
+.forms{
+    color: black;
+}
+
+
+/* orders */
+.orders{
+    float: left;
+    background-color: lightblue;
+}

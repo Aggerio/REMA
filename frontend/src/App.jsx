@@ -27,6 +27,7 @@ import RestaurantPage from "./pages/RestaurantPage";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllRestaurants from "./pages/AllRestaurants";
+import RestoPage from "./pages/RestoPage";
 
 function App() {
   return (
@@ -40,6 +41,12 @@ function App() {
           }
         />
         <Route path="/restaurant/:id" element={<RestaurantPage />} />
+        <Route
+          path="/restaurant-page"
+          element={
+            < RestoPage/>
+          }
+        />
       </Routes>
     </Router>
   );
