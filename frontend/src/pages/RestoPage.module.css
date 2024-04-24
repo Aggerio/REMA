@@ -37,6 +37,9 @@
     display: flex;
     justify-content: space-between;
 }
+.h2{
+    font-weight: bold;
+}
 .forms{
     color: black;
 }

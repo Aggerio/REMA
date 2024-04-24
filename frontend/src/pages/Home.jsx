@@ -1,14 +1,17 @@
+import styles from "./Home.module.css"
+
+
 const Home = () => {
   return (
     <>
-      <div className="bg">
-        <div className="nav">
-          <ul type="none" className="nav1">
-            <li className="logo">
+      <div className={styles.bg}>
+        <div className={styles.nav}>
+          <ul type="none" className={styles.nav1}>
+            <li className={styles.logo}>
               <a href="#">LOGO</a>
             </li>
             <li>
-              <ul type="none" className="nav2">
+              <ul type="none" className={styles.nav2}>
                 <li>
                   <a href="#">Offers</a>
                 </li>
@@ -25,8 +28,8 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        <div className="edge">
-          <div className="main">
+        <div className={styles.edge}>
+          <div className={styles.main}>
             {/* <div className="nav">
                         <ul type="none" className="nav1">
                             <li><a href="#" >LOGO</a></li>
@@ -41,26 +44,26 @@ const Home = () => {
 
                         </ul>
                     </div> */}
-            <div className="first">
+            <div className={styles.first}>
               <p>
-                <span className="up-info">Unforgettable dining experience</span>
+                <span className={styles.up_info}>Unforgettable dining experience</span>
               </p>
-              <p className="title1-m">
-                <span className="title1">DELIGHT</span>
+              <p className={styles.title1_m}>
+                <span className={styles.title1}>DELIGHT</span>
               </p>
               <p className="title2-m">
-                <span className="title2">Restaurant</span>
+                <span className={styles.title2}>Restaurant</span>
               </p>
               <p>
-                <span className="down-info">
+                <span className={styles.down_info}>
                   A progression of rare and beautiful ingredients.
                 </span>
               </p>
               <br />
-              <button className="book-btn ">Dive in &#8594;</button>
-              <button className="menu-btn">Login</button>
+              <button className={styles.book_btn}>Dive in &#8594;</button>
+              <button className={styles.menu_btn}>Login</button>
             </div>
-            <div className="second"></div>
+            <div className={styles.second}></div>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ export default function RestoPage() {
         <br></br>
         <div className={styles.title2}>
           <div>
-            <h2>Choose Dishes</h2>
+            <h2 className={styles.h2}>Choose Dishes</h2>
           </div>
           <div>
             <form className={styles.forms}>

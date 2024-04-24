@@ -48,6 +48,12 @@ function App() {
             < RestoPage/>
           }
         />
+        <Route
+          path="/home"
+          element={
+            < Home/>
+          }
+        />
       </Routes>
     </Router>
   );
