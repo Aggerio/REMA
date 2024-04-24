@@ -1,6 +1,3 @@
-
-
-
 const Home = () => {
   return (
     <>
@@ -13,7 +10,7 @@ const Home = () => {
             <li>
               <ul type="none" className="nav2">
                 <li>
-                  <a href="#">Home</a>
+                  <a href="#">Offers</a>
                 </li>
                 <li>
                   <a href="#">Order</a>
