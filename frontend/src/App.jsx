@@ -25,6 +25,7 @@
 import React from "react";
 import RestaurantPage from "./pages/RestaurantPage";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllRestaurants from "./pages/AllRestaurants";
 import RestoPage from "./pages/RestoPage";
@@ -33,7 +34,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Login/>} />
         <Route
           path="/restaurants"
           element={
