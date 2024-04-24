@@ -53,7 +53,7 @@ export default function CentralNavbar() {
       {/* /src/assets/logo.svg.*/}
       {/* Offers Element*/}
       <div className="inset-0 w-auto h-[12.5%] flex justify-center items-center">
-        <div className={"w-[60%] h-[70%] rounded-[10%] flex justify-center items-center" + (nav == "Offers" ? " bg-[#ea7c69] " : "")}>
+        <div className={"w-[60%] h-[70%] rounded-[10%] flex justify-center items-center" + (nav == "Offers" ? " bg-[#ea7c69] shadow-[0_4px_8px_0_rgba(255,255,255,255.2),0_6px_20px_0_rgba(255,255,255,0.19)]" : "")}>
         <svg
           width="40"
           height="40"
