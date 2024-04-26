@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   /* Homepage */
-  body{
+  .body{
     font-family: 'Poppins',Helvetica, sans-serif;
     /* background-color: #000000; */
      color: black;
@@ -67,7 +67,16 @@
   }
   .logo{
     align-self: center;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
+  }
+  .logo:hover{
+    background-color: black;
+    /* backdrop-filter: blur(5px); */
+    transition: 0.2s;
+    opacity:  0.8;
+    transition: 0.2s;
+    padding: 0.3rem;
+    border-radius: 3rem;
   }
   a{
     color: white;
@@ -79,7 +88,7 @@
     transition: 0.2s;
   }
   
-  li{
+  .li{
     float: left;
     transition: 0.2s;
     padding: 0.2rem;
@@ -87,14 +96,14 @@
     /* font-weight: bold; */
   
   }
-  li:hover{
+  .li:hover{
     background-color: black;
     /* backdrop-filter: blur(5px); */
     transition: 0.2s;
     opacity:  0.8;
   
   }
-  li a{
+  .li a{
     padding-right: 1.4rem;
   }
   .first{

@@ -7,6 +7,7 @@
     padding-top: 1%;
     padding-right: 1%;
     /* display: flex; */
+    float: left;
 }
 .header{
     display: flex;
@@ -24,8 +25,15 @@
 .input{
     color: black;
 }
+
 .options li{
     padding-right: 2.5rem;
+    float: left;
+}
+.options li:hover{
+    color: #EA7C69;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .option_name{
     color: #EA7C69;
@@ -36,6 +44,7 @@
 .title2{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .h2{
     font-weight: bold;
@@ -48,5 +57,74 @@
 /* orders */
 .orders{
     float: left;
-    background-color: lightblue;
+    background-color:#1f1d2b;
+    width: 30%;
+    height: 100vh;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    position: relative;
+}
+.ordernumber{
+    font-size: 1.5rem;
+}
+.ordertype{
+    display: inline-flex;
+}
+.orderfrom{
+    margin-right: 1rem;
+    color: #EA7C69;
+    border: 0.15em solid gray;
+    padding: 0.4rem;
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.orderfrom:hover{
+    cursor: pointer;
+    box-shadow: inset 2px 2px white;
+}
+.orderfrom:active{
+    background-color: #EA7C69;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+
+.payment{
+    position: absolute;
+    bottom: 0;
+    /* background-color: green; */
+    /* border: 1rem solid; */
+    border-top: 0.1rem solid white;
+    width: 95%;
+    height: 20%;
+    padding: 1%;
+    padding-top: 2.5%;
+    z-index: 200;
+}
+.paymentsubject{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.tocart{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.tocart_btn{
+    background-color: #EA7C69;
+    width: 25rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    font-weight: bold;
+}
+.tocart_btn:active{
+    background-color: #c46857;
 }

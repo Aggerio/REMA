@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./RestoPage.module.css";
 import CentralNavbar from "../components/CentralNavbar";
+import RestaurantCard from "../components/RestaurantCard";
 
 export default function RestoPage() {
   return (
@@ -16,7 +17,11 @@ export default function RestoPage() {
             </p>
           </div>
           <div>
-            <input className={styles.input} type="search" placeholder="Search for food,coffee"></input>
+            <input
+              className={styles.input}
+              type="search"
+              placeholder="Search for food,coffee"
+            ></input>
           </div>
         </div>
         <div>
@@ -50,12 +55,59 @@ export default function RestoPage() {
           </div>
         </div>
         <br></br>
-        <div>yo</div>
+        <div>
+          <RestaurantCard
+            rest_id="1"
+            rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+            rest_name="Chicken Tikka Masala"
+            rest_distance="1500 Rs"
+            rest_rating="4 stars"
+          />
+          <RestaurantCard
+            rest_id="1"
+            rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
+            rest_name="Vellore Restaurant 1"
+            rest_distance="0.8km"
+            rest_rating="4 stars"
+          />
+        </div>
       </div>
       {/* orders section */}
 
-      <div className={styles.orders}>kuch bhi</div>
+      <div className={styles.orders}>
+        <div>
+          <p className={styles.ordernumber}>Orders #696969</p>
+        </div>
+        <br></br>
+        <div className={styles.ordertype}>
+          <div className={styles.orderfrom}>
+            <p>Dine In</p>
+          </div>
+          <div className={styles.orderfrom}>
+            <p>To Go</p>
+          </div>
+          <div className={styles.orderfrom}>
+            <p>Takeaway</p>
+          </div>
+        </div>
+        <div className={styles.payment}>
+          <div className={styles.paymentsubject}>
+            <div>
+              <p>Discount</p>
+            </div>
+            <div>300 Rs</div>
+          </div>
+          <div className={styles.paymentsubject}>
+            <div>
+              <p>Sub Total</p>
+            </div>
+            <div>2000 Rs</div>
+          </div>
+          <div className={styles.tocart}>
+            <button className={styles.tocart_btn}>Continue to Payment</button>
+          </div>
+        </div>
+      </div>
     </div>
-    
   );
 }
