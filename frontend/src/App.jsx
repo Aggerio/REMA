@@ -29,31 +29,18 @@ import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllRestaurants from "./pages/AllRestaurants";
 import RestoPage from "./pages/RestoPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login/>} />
-        <Route
-          path="/restaurants"
-          element={
-            < AllRestaurants/>
-          }
-        />
+        <Route path="/" element={<Login />} />
+        <Route path="/restaurants" element={<AllRestaurants />} />
         <Route path="/restaurant/:id" element={<RestaurantPage />} />
-        <Route
-          path="/restaurant-page"
-          element={
-            < RestoPage/>
-          }
-        />
-        <Route
-          path="/home"
-          element={
-            < Home/>
-          }
-        />
+        <Route path="/restaurant-page" element={<RestoPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
