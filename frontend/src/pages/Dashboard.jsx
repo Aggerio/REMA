@@ -179,23 +179,7 @@ export default function Dashboard() {
                         </span>
                       </td>
                     </tr>
-                    <tr class=" border-gray-600 font-light text-[30px]">
-                      <td class="px-4 py-2 flex items-center">
-                        <img
-                          src="assets/user_icon.png"
-                          alt="Avatar"
-                          class="w-[10%] h-[10%] rounded-full mr-2"
-                        />
-                        Eren Jaegar
-                      </td>
-                      <td class="px-4 py-2">Spicy seasoned seafood noodles</td>
-                      <td class="px-4 py-2">$125</td>
-                      <td class="px-4 py-2">
-                        <span class="border-green-300 border-2 text-green-500 px-2 py-1 rounded">
-                          Completed
-                        </span>
-                      </td>
-                    </tr>
+                    
                   </tbody>
                 </table>
               </div>
