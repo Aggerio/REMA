@@ -10,18 +10,18 @@ const Home = () => {
             <li className={styles.logo}>
               <a href="#">LOGO</a>
             </li>
-            <li>
+            <li className={styles.li}>
               <ul type="none" className={styles.nav2}>
-                <li>
+                <li className={styles.li}>
                   <a href="#">Offers</a>
                 </li>
-                <li>
+                <li className={styles.li}>
                   <a href="#">Order</a>
                 </li>
-                <li>
+                <li className={styles.li}>
                   <a href="#">Cart</a>
                 </li>
-                <li>
+                <li className={styles.li}>
                   <a href="#">Login</a>
                 </li>
               </ul>
