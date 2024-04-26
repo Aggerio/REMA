@@ -33,7 +33,9 @@ export default function RestoPage() {
             <li>Cold Dishes</li>
             <li>Soups</li>
             <li>Grills</li>
-            <li>If u say so</li>
+            <li>Curry</li>
+            <li>Pastries</li>
+
           </ul>
         </div>
         <br></br>
@@ -45,11 +47,11 @@ export default function RestoPage() {
             <h2 className={styles.h2}>Choose Dishes</h2>
           </div>
           <div>
-            <form className={styles.forms}>
-              <select name="options">
-                <option value="dine-in">dine in</option>
-                <option value="delivery">delivery</option>
-                <option value="takeaway">TakeAway</option>
+            <form>
+              <select name="options" className={styles.forms}>
+                <option value="dine-in" className={styles.forms}>dine in</option>
+                <option value="delivery" className={styles.forms}>delivery</option>
+                <option value="takeaway" className={styles.forms} >TakeAway</option>
               </select>
             </form>
           </div>
@@ -60,15 +62,15 @@ export default function RestoPage() {
             rest_id="1"
             rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
             rest_name="Chicken Tikka Masala"
-            rest_distance="1500 Rs"
+            rest_distance="Rs 1500"
             rest_rating="4 stars"
           />
           <RestaurantCard
             rest_id="1"
             rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
-            rest_name="Vellore Restaurant 1"
-            rest_distance="0.8km"
-            rest_rating="4 stars"
+            rest_name="Dragon Chicken"
+            rest_distance="Rs 1200"
+            rest_rating="4.5 stars"
           />
         </div>
       </div>
@@ -76,7 +78,7 @@ export default function RestoPage() {
 
       <div className={styles.orders}>
         <div>
-          <p className={styles.ordernumber}>Orders #696969</p>
+          <p className={styles.ordernumber}>Orders #123456</p>
         </div>
         <br></br>
         <div className={styles.ordertype}>
@@ -145,13 +147,13 @@ export default function RestoPage() {
             <div>
               <p>Discount</p>
             </div>
-            <div>300 Rs</div>
+            <div className='font-semibold'>300 Rs</div>
           </div>
           <div className={styles.paymentsubject}>
             <div>
               <p>Sub Total</p>
             </div>
-            <div>2000 Rs</div>
+            <div className='font-semibold'>2000 Rs</div>
           </div>
           <div className={styles.tocart}>
             <button className={styles.tocart_btn}>Continue to Payment</button>

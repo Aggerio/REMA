@@ -24,8 +24,20 @@
 }
 .input{
     color: black;
+    padding: 0.3rem;
+    padding-left: 0.7rem;
+    border-radius: 2rem;
+    background-color: #393c49;
+    border: 0.1rem solid gray;
 }
-
+.forms{
+    color: white;
+    padding: 0.3rem;
+    padding-left: 0.7rem;
+    border-radius: 2rem;
+    background-color: #1f1d2b;
+    border: 0.1rem solid gray;
+}
 .options li{
     padding-right: 2.5rem;
     float: left;
@@ -48,6 +60,7 @@
 }
 .h2{
     font-weight: bold;
+    font-size: 1.4rem;
 }
 .forms{
     color: black;
@@ -135,4 +148,9 @@
     border-radius: 2rem;
     color: #EA7C69;
     margin-bottom: 2rem;
+}
+.delete_btn:hover{
+    background-color: #EA7C69;
+    color: white;
+    transition: 0.3s;
 }
