@@ -55,7 +55,7 @@ export default function RestoPage() {
           </div>
         </div>
         <br></br>
-        <div>
+        <div className="grid grid-flow-row grid-cols-2">
           <RestaurantCard
             rest_id="1"
             rest_img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
@@ -90,6 +90,56 @@ export default function RestoPage() {
             <p>Takeaway</p>
           </div>
         </div>
+
+        <br />
+        <br></br>
+        <hr></hr>
+        <br></br>
+
+
+        <div className='flex flex-row justify-between'>
+          <div className='flex flex-row justify-between mb-4'>
+            <div>
+              <p className='mr-40 w-15 font-semibold'>Spicy chicken Grilled </p>
+              <p className='text-gray-400'>Rs 500 </p>
+            </div>
+            <div>Qty. 2</div>
+          </div>
+          <div className='font-semibold'>Rs. 1000</div>
+        </div>
+        <div className='flex justify-center'>
+          <button className={styles.delete_btn}>Delete</button>
+        </div>
+
+        <div className='flex flex-row justify-between'>
+          <div className='flex flex-row justify-between mb-4'>
+            <div>
+              <p className='mr-40 w-15 font-semibold'>Spicy chicken Grilled </p>
+              <p className='text-gray-400'>Rs 500 </p>
+            </div>
+            <div>Qty. 2</div>
+          </div>
+          <div className='font-semibold'>Rs. 1000</div>
+        </div>
+        <div className='flex justify-center'>
+          <button className={styles.delete_btn}>Delete</button>
+        </div>
+
+        <div className='flex flex-row justify-between'>
+          <div className='flex flex-row justify-between mb-4'>
+            <div>
+              <p className='mr-40 w-15 font-semibold'>Spicy chicken Grilled </p>
+              <p className='text-gray-400'>Rs 500 </p>
+            </div>
+            <div>Qty. 2</div>
+          </div>
+          <div className='font-semibold'>Rs. 1000</div>
+        </div>
+        <div className='flex justify-center'>
+          <button className={styles.delete_btn}>Delete</button>
+        </div>
+
+        {/* payment */}
         <div className={styles.payment}>
           <div className={styles.paymentsubject}>
             <div>
