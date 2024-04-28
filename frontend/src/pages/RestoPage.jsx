@@ -49,9 +49,9 @@ export default function RestoPage() {
           <div>
             <form>
               <select name="options" className={styles.forms}>
-                <option value="dine-in" className={styles.forms}>dine in</option>
-                <option value="delivery" className={styles.forms}>delivery</option>
-                <option value="takeaway" className={styles.forms} >TakeAway</option>
+                <option value="Dine-in" className={styles.forms}>Dine in</option>
+                <option value="Delivery" className={styles.forms}>Delivery</option>
+                <option value="Takeaway" className={styles.forms} >TakeAway</option>
               </select>
             </form>
           </div>
