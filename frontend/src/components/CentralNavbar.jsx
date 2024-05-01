@@ -9,12 +9,13 @@ import { useNavigate } from "react-router-dom";
 export default function CentralNavbar() {
   const nav = useSelector((state) => state.nav.current);
   const dispatch = useDispatch();
-  const navigte = useNavigate();
+  const navigate = useNavigate();
   // bg-[#1f1d2b]
 
   console.log("Nav: ", nav);
   function updateNavbar(new_nav) {
     dispatch(change_nav(new_nav || "Home"));
+    navigate("/" + new_nav.toLowerCase());
   }
   return (
     <div className="absolute left-0 top-0 w-[8%] h-screen bg-[#1f1d2b]">

@@ -30,12 +30,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllRestaurants from "./pages/AllRestaurants";
 import RestoPage from "./pages/RestoPage";
 import Dashboard from "./pages/Dashboard";
+import OfferPage from "./pages/OffersPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/offers" element={<OfferPage/>} />
         <Route path="/restaurants" element={<AllRestaurants />} />
         <Route path="/restaurant/:id" element={<RestaurantPage />} />
         <Route path="/restaurant-page" element={<RestoPage />} />

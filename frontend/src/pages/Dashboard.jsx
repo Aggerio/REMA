@@ -1,7 +1,9 @@
 import CentralNavbar from "../components/CentralNavbar";
+import StatPieChart from "../components/StatPieChart";
+import PieChart from "../components/StatPieChart";
 export default function Dashboard() {
   return (
-    <div className="bg-[#252836] w-screen h-screen flex fixed">
+    <div className="bg-[#252836] w-screen h-screen flex overflow-y-auto">
       <div>
         <CentralNavbar />
       </div>
@@ -179,7 +181,6 @@ export default function Dashboard() {
                         </span>
                       </td>
                     </tr>
-                    
                   </tbody>
                 </table>
               </div>
@@ -278,11 +279,7 @@ export default function Dashboard() {
           </div>
           <div className="flex justify-center">
             <div className="relative">
-              <img
-              src='assets/flowchart.png'
-               className="rounded-full bg-gray-700 h-52 w-52 flex items-center justify-center"
-               />
-
+                <StatPieChart />
               <div className="mt-4 text-center">
                 <div className="flex justify-center items-center mb-2">
                   <div className="h-3 w-3 rounded-full bg-pink-500 mr-2"></div>
