@@ -22,18 +22,20 @@ export default function CartPage() {
 
         </div>
       </div>
-      <div className="h-[120%] w-[40%] bg-[#1f1d2b] text-white p-4">
+      <div className="h-[79%] w-[30%] ml-10 mt-[6%] bg-[#1f1d2b] text-white p-4 pb-0 rounded-lg overflow-auto relative">
         <p className="text-2xl">Enter Promocode</p>
         <br></br>
         <input type="text" placeholder="Promocode" className="w-[50%] rounded-lg p-1 bg-black border-2 border-orange-500 focus:ring-2 focus:ring-blue" />
         <br></br>
         <br></br>
 
-        <div>
+        <div className="overflow-auto">
           <Offer/>
           <Offer/>
           <Offer/>
-
+        </div>
+        <div className="text-[#1f1d2b] bg-[#1f1d2b] sticky bottom-0">
+          vsvn
         </div>
       </div>
     </div>
