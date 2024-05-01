@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./RestoPage.module.css";
 import CentralNavbar from "../components/CentralNavbar";
 import RestaurantCard from "../components/RestaurantCard";
+import { useParams } from "react-router-dom";
 
 export default function RestoPage() {
 

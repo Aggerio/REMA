@@ -32,6 +32,7 @@ import Dashboard from "./pages/Dashboard";
 import OfferPage from "./pages/OffersPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/restaurant/:id" element={<RestoPage/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/settings" element={<SettingsPage/>} />
+        <Route path="/cart" element={<SettingsPage/>} />
         <Route path="/profile" element={<ProfilePage/>} />
       </Routes>
     </Router>
