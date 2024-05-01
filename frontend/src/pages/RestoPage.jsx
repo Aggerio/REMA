@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./RestoPage.module.css";
-import CentralNavbar from "../components/CentralNavbar";
+import CentralNavbar from "../components/UserNavbar";
 import RestaurantCard from "../components/RestaurantCard";
 import { useParams } from "react-router-dom";
 
 export default function RestoPage() {
 
     let {id} = useParams();
+    console.log("Id of the restaurant : ", id);
   return (
     <div>
       <CentralNavbar />

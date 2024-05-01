@@ -1,5 +1,5 @@
 import RestaurantCard from "../components/RestaurantCard";
-import CentralNavbar from "../components/CentralNavbar";
+import CentralNavbar from "../components/UserNavbar";
 
 export default function AllRestaurants() {
   return (
