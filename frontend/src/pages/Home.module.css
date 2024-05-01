@@ -67,7 +67,8 @@
   }
   .logo{
     align-self: center;
-    background-color: black;
+    color: white;
+    /* background-color: black; */
     opacity:  0.8;
     border-radius: 3rem;
     padding: 0.3rem;
@@ -78,7 +79,7 @@
     /* padding-left: 1.5rem; */
   }
   .logo:hover{
-    /* background-color: black; */
+    background-color: black;  
     /* backdrop-filter: blur(5px); */
     transition: 0.2s;
     opacity:  0.8;
@@ -86,13 +87,19 @@
     /* padding: 0.3rem; */
     /* border-radius: 3rem; */
   }
+  .linking{
+    color: white;
+    opacity: 1;
+  }
   a{
     color: white;
     text-decoration: none;
     transition: 0.2s;
+    opacity: 1;
   }
   a:hover{
     color: orange;
+    opacity: 1;
     transition: 0.2s;
   }
   
@@ -101,23 +108,24 @@
     transition: 0.2s;
     padding: 0.2rem;
     border-radius: 3rem;
-    background-color: black;
+    /* background-color: black; */
     opacity:  0.8;
     /* margin-bottom: 1.5rem; */
     align-self: center;
-
+    color: white;
     /* font-weight: bold; */
   
   }
   .li:hover{
-    /* background-color: black; */
+    background-color: black;
     /* backdrop-filter: blur(5px); */
     transition: 0.2s;
-    /* opacity:  0.8; */
+    opacity:  0.8;
   
   }
   .li a{
     padding-right: 1.4rem;
+    opacity: 1;
   }
   .first{
     /* float: left; */
