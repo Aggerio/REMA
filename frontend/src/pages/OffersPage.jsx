@@ -1,4 +1,6 @@
 import CentralNavbar from "../components/CentralNavbar";
+import Offer from "../components/Offers";
+
 
 export default function OfferPage()
 {
@@ -14,7 +16,7 @@ export default function OfferPage()
             <p className="text-white mt-3">Friday 26 April, 2024</p>
           </div>
         </div>
-
+        <Offer/>
         {/* YAHA PE CODE LIKHIYO */}
       </div>
     </div>
