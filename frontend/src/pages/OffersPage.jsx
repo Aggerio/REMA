@@ -14,6 +14,8 @@ export default function OfferPage()
             <p className="text-white mt-3">Friday 26 April, 2024</p>
           </div>
         </div>
+
+        {/* YAHA PE CODE LIKHIYO */}
       </div>
     </div>
     );
