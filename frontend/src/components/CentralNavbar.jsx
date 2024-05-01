@@ -15,7 +15,7 @@ export default function CentralNavbar() {
   const navigate = useNavigate();
   // bg-[#1f1d2b]
 
-  console.log("Nav: ", nav);
+  console.log("Nav: ", currentNav);
   function updateNavbar(new_nav) {
     console.log("Navigating to:", new_nav.toLowerCase());
     dispatch(change_nav(new_nav || "Home"));
@@ -61,10 +61,11 @@ export default function CentralNavbar() {
       </div>
 
       <div
-        // onClick={updateNavbar("Restaurants")}
         className="inset-0 w-auto h-[12.5%] flex justify-center items-center"
       >
-        <div className="w-[60%] h-[70%] rounded-[10%] bg-[#eb966a23] flex justify-center items-center cursor-pointer hover:shadow-[0_4px_8px_0_rgba(255,255,255,255.2),0_6px_20px_0_rgba(255,255,255,0.19)]">
+        <div 
+        onClick={() => {}}
+        className="w-[60%] h-[70%] rounded-[10%] bg-[#eb966a23] flex justify-center items-center cursor-pointer hover:shadow-[0_4px_8px_0_rgba(255,255,255,255.2),0_6px_20px_0_rgba(255,255,255,0.19)]">
           <svg
             width="40"
             height="40"

@@ -13,7 +13,7 @@ export default function AllRestaurants() {
             <h1 className="text-[2rem] text-white">Hi Agam,</h1>
             <p className="text-white mt-3">Friday 26 April, 2024</p>
           </div>
-          <input className=" bg-[#252836] rounded-[10%] text-white text-[1rem] text-center" type="text" name="search" value={"🔍 Search for food"} />
+          <input className="bg-[#252836] rounded-[10%] text-white text-[1rem] text-center" type="text" name="search" onChange = {() => {}} value={"🔍 Search for food"} />
         </div>
         <div>
           <RestaurantCard

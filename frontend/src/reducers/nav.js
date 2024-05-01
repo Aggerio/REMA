@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 export const navSlice= createSlice({
   name: "nav",
   initialState: {
-    current: "Offers",
+    current: "Restaurants",
   },
   reducers: {
     change_nav: (state, action) => {
-      state.name = action.payload || "Home";
+      state.name = action.payload || "Restaurants";
     },
   },
 });
