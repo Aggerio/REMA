@@ -1,6 +1,7 @@
 import CentralNavbar from "../components/UserNavbar";
 import StatPieChart from "../components/StatPieChart";
 import PieChart from "../components/StatPieChart";
+
 export default function Dashboard() {
   return (
     <div className="bg-[#252836] w-screen h-screen flex overflow-y-auto">

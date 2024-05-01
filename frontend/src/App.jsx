@@ -23,31 +23,56 @@
 // export default App;
 
 import React from "react";
+import { useSelector } from "react-redux";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllRestaurants from "./pages/AllRestaurants";
 import RestoPage from "./pages/RestoPage";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from './pages/Dashboard';
 import OfferPage from "./pages/OffersPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
 import CartPage from "./pages/CartPage";
+import { Navigate } from "react-router-dom";
 
 function App() {
+  const user = useSelector((state) => state.auth.user);
+  const isCustomer = user && user.role === 'customer';
+  const isRestaurant = user && user.role === 'restaurant';
+
   return (
-    <Router>
+     <Router>
       <Routes>
+        {/* Common routes */}
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/offers" element={<OfferPage/>} />
-        <Route path="/restaurants" element={<AllRestaurants />} />
-        <Route path="/restaurant/:id" element={<RestoPage/>} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/settings" element={<SettingsPage/>} />
-        <Route path="/cart" element={<SettingsPage/>} />
-        <Route path="/profile" element={<ProfilePage/>} />
+
+        {/* Customer routes */}
+        {isCustomer && (
+          <>
+            <Route path="/offers" element={<OfferPage />} />
+            <Route path="/restaurants" element={<AllRestaurants />} />
+            <Route path="/restaurant/:id" element={<RestoPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+          </>
+        )}
+
+        {/* Restaurant routes */}
+        {isRestaurant && (
+          <>
+            <Route path="/restaurant/dashboard" element={<RestaurantDashboard />} />
+            <Route path="/restaurant/menu" element={<MenuManagement />} />
+            <Route path="/restaurant/orders" element={<OrderManagement />} />
+          </>
+        )}
+
+        {/* Redirect to login if not authenticated */}
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </Router>
   );
