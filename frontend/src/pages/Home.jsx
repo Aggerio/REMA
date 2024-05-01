@@ -8,21 +8,21 @@ const Home = () => {
         <div className={styles.nav}>
           <ul type="none" className={styles.nav1}>
             <li className={styles.logo}>
-              <a href="#">LOGO</a>
+              <a className={styles.linking} href="#">REMA</a>
             </li>
             <li className={styles.li}>
               <ul type="none" className={styles.nav2}>
                 <li className={styles.li}>
-                  <a href="#">Offers</a>
+                  <a className={styles.linking} href="#">Offers</a>
                 </li>
                 <li className={styles.li}>
-                  <a href="#">Order</a>
+                  <a className={styles.linking} href="#">Order</a>
                 </li>
                 <li className={styles.li}>
-                  <a href="#">Cart</a>
+                  <a className={styles.linking} href="#">Cart</a>
                 </li>
                 <li className={styles.li}>
-                  <a href="#">Login</a>
+                  <a className={styles.linking} href="#">Login</a>
                 </li>
               </ul>
             </li>
