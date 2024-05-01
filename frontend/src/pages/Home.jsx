@@ -1,28 +1,41 @@
-import styles from "./Home.module.css"
-
+import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
+import { change_nav } from "../reducers/nav";
+import { useDispatch } from "react-redux";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className={styles.bg}>
         <div className={styles.nav}>
           <ul type="none" className={styles.nav1}>
             <li className={styles.logo}>
-              <a className={styles.linking} href="#">REMA</a>
+              <a className={styles.linking} href="#">
+                REMA
+              </a>
             </li>
             <li className={styles.li}>
               <ul type="none" className={styles.nav2}>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">Offers</a>
+                  <a className={styles.linking} href="#">
+                    Offers
+                  </a>
                 </li>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">Order</a>
+                  <a className={styles.linking} href="#">
+                    Order
+                  </a>
                 </li>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">Cart</a>
+                  <a className={styles.linking} href="#">
+                    Cart
+                  </a>
                 </li>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">Login</a>
+                  <a className={styles.linking} href="#">
+                    Login
+                  </a>
                 </li>
               </ul>
             </li>
@@ -46,7 +59,9 @@ const Home = () => {
                     </div> */}
             <div className={styles.first}>
               <p>
-                <span className={styles.up_info}>Unforgettable dining experience</span>
+                <span className={styles.up_info}>
+                  Unforgettable dining experience
+                </span>
               </p>
               <p className={styles.title1_m}>
                 <span className={styles.title1}>DELIGHT</span>
@@ -60,7 +75,15 @@ const Home = () => {
                 </span>
               </p>
               <br />
-              <button className={styles.book_btn}>Dive in &#8594;</button>
+              <button
+                onClick={() => {
+                  navigate("/restaurants");
+                  useDispatch(change_nav('Restaurants'));
+                }}
+                className={styles.book_btn}
+              >
+                Dive in &#8594;
+              </button>
               <button className={styles.menu_btn}>Login</button>
             </div>
             <div className={styles.second}></div>
