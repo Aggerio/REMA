@@ -16,7 +16,15 @@ export default function OfferPage()
             <p className="text-white mt-3">Friday 26 April, 2024</p>
           </div>
         </div>
+
+        <div className="grid grid-flow-row grid-cols-3">
         <Offer/>
+        <Offer/>
+        <Offer/>
+        <Offer/>
+        <Offer/>
+
+        </div>
         {/* YAHA PE CODE LIKHIYO */}
       </div>
     </div>
