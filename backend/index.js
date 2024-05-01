@@ -18,9 +18,11 @@ async function run() {
 
 	  const userRoutes = require('./routes/user');
 	  const restaurantRoutes = require('./routes/restaurant');
+	  const authRoute = require('./auth');
 
 	  app.use('/user/', userRoutes);
 	  app.use('/restaurant/', restaurantRoutes);
+	  app.use('/login', authRoute);
 
 	  app.listen(port, () => {
 		  console.log(`Server is listening on port: ${port}`)
