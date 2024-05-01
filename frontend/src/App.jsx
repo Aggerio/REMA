@@ -46,7 +46,7 @@ function App() {
         <Route path="/restaurant/:id" element={<RestoPage/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/settings" element={<SettingsPage/>} />
-        <Route path="/cart" element={<SettingsPage/>} />
+        <Route path="/cart" element={<CartPage/>} />
         <Route path="/profile" element={<ProfilePage/>} />
       </Routes>
     </Router>

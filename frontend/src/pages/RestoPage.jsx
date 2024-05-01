@@ -16,7 +16,7 @@ export default function RestoPage() {
           <div className={styles.title}>
             <h1 className={styles.h1}>Delight Resto</h1>
             <p>
-              <span className={styles.date}>Tuesday 69 dec</span>
+              <span className={styles.date}>Tuesday 12 dec</span>
             </p>
           </div>
           <div>
