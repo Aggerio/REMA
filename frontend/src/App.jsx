@@ -26,7 +26,7 @@ import React from "react";
 import RestaurantPage from "./pages/RestaurantPage";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllRestaurants from "./pages/AllRestaurants";
 import RestoPage from "./pages/RestoPage";
 import Dashboard from "./pages/Dashboard";
