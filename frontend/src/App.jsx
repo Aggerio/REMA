@@ -23,7 +23,6 @@
 // export default App;
 
 import React from "react";
-import RestaurantPage from "./pages/RestaurantPage";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -31,18 +30,22 @@ import AllRestaurants from "./pages/AllRestaurants";
 import RestoPage from "./pages/RestoPage";
 import Dashboard from "./pages/Dashboard";
 import OfferPage from "./pages/OffersPage";
+import SettingsPage from "./pages/SettingsPage";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/offers" element={<OfferPage/>} />
         <Route path="/restaurants" element={<AllRestaurants />} />
-        <Route path="/restaurant/:id" element={<RestaurantPage />} />
-        <Route path="/restaurant-page" element={<RestoPage />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/restaurant/:id" element={<RestoPage/>} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/settings" element={<SettingsPage/>} />
+        <Route path="/profile" element={<ProfilePage/>} />
       </Routes>
     </Router>
   );

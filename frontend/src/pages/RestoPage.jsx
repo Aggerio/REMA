@@ -4,6 +4,8 @@ import CentralNavbar from "../components/CentralNavbar";
 import RestaurantCard from "../components/RestaurantCard";
 
 export default function RestoPage() {
+
+    let {id} = useParams();
   return (
     <div>
       <CentralNavbar />
