@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 
 const Home = () => {
   const navigate = useNavigate();
+  // document.body.style.zoom="125%";
   return (
     <>
       <div className={styles.bg}>

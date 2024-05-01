@@ -17,9 +17,10 @@ export default function AllRestaurants() {
             <input
               className="bg-[#252836] rounded-[10%] text-white text-[1rem] text-center h-[4rem]"
               type="text"
+              placeholder="🔍Search for food"
               name="search"
               onChange={() => {}}
-              value={"🔍 Search for food"}
+              // value={"🔍 Search for food"}
             />
           </div>
         </div>
