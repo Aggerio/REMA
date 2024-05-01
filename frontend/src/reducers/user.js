@@ -6,11 +6,11 @@ export const userSlice = createSlice({
        role : "",
     },
     reducers: {
-    change_user: (state, action) => {
+    change_user_role: (state, action) => {
       state.role = action.payload || "customer";
     },
   },
 });
 
-export const {change_user} = userSlice.actions;
+export const {change_user_role} = userSlice.actions;
 export default userSlice.reducer;

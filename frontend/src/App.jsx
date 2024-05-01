@@ -37,9 +37,9 @@ import CartPage from "./pages/CartPage";
 import { Navigate } from "react-router-dom";
 
 function App() {
-  const user = useSelector((state) => state.auth.user);
-  const isCustomer = user && user.role === 'customer';
-  const isRestaurant = user && user.role === 'restaurant';
+  const user = useSelector((state) => state.auth);
+  const isCustomer = (user.role === 'customer');
+  const isRestaurant = (user.role === 'restaurant');
 
   return (
      <Router>
@@ -55,7 +55,6 @@ function App() {
             <Route path="/offers" element={<OfferPage />} />
             <Route path="/restaurants" element={<AllRestaurants />} />
             <Route path="/restaurant/:id" element={<RestoPage />} />
-            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/profile" element={<ProfilePage />} />
@@ -65,7 +64,7 @@ function App() {
         {/* Restaurant routes */}
         {isRestaurant && (
           <>
-            <Route path="/restaurant/dashboard" element={<RestaurantDashboard />} />
+            <Route path="/restaurant/dashboard" element={<Dashboard />} />
             <Route path="/restaurant/menu" element={<MenuManagement />} />
             <Route path="/restaurant/orders" element={<OrderManagement />} />
           </>
