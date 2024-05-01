@@ -1,4 +1,4 @@
-import CentralNavbar from "../components/CentralNavbar";
+import CentralNavbar from "../components/UserNavbar";
 import StatPieChart from "../components/StatPieChart";
 import PieChart from "../components/StatPieChart";
 export default function Dashboard() {

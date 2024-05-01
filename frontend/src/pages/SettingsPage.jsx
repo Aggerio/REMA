@@ -1,4 +1,4 @@
-import CentralNavbar from "../components/CentralNavbar";
+import CentralNavbar from "../components/UserNavbar";
 
 export default function SettingsPage()
 {

@@ -1,3 +1,5 @@
+import CentralNavbar from "../components/UserNavbar";
+
 import CentralNavbar from "../components/CentralNavbar";
 import CartCompo from "../components/CartCompo";
 export default function CartPage() {
