@@ -34,6 +34,10 @@ import OfferPage from "./pages/OffersPage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
 import CartPage from "./pages/CartPage";
+import MenuManagement from "./pages/MenuManagement";
+import OrderManagement  from "./pages/OrderManagement";
+import RestaurantProfilePage from "./pages/RestaurantProfilePage";
+import RestaurantSettingsPage from "./pages/RestaurantSettingsPage";
 import { Navigate } from "react-router-dom";
 
 function App() {
@@ -55,9 +59,9 @@ function App() {
             <Route path="/offers" element={<OfferPage />} />
             <Route path="/restaurants" element={<AllRestaurants />} />
             <Route path="/restaurant/:id" element={<RestoPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/settings" element={<SettingsPage />} />
           </>
         )}
 
@@ -67,6 +71,8 @@ function App() {
             <Route path="/restaurant/dashboard" element={<Dashboard />} />
             <Route path="/restaurant/menu" element={<MenuManagement />} />
             <Route path="/restaurant/orders" element={<OrderManagement />} />
+            <Route path="/restaurant/profile" element={<RestaurantProfilePage/>} />
+            <Route path="/restaurant/settings" element={<RestaurantSettingsPage/>} />
           </>
         )}
 
