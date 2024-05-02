@@ -1,4 +1,4 @@
-#REMA - All in One Restaurant Manager
+#REMA - All in One Restaurant Manager  
 REMA is a comprehensive web application designed to revolutionize the way customers order food from restaurants and how restaurant owners manage their operations. This platform provides a seamless and convenient experience for both customers and restaurant owners, streamlining the entire process of ordering, tracking, and analyzing restaurant data.  
 
   
