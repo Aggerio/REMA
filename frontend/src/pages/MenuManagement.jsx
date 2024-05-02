@@ -66,14 +66,14 @@ export default function MenuManagement() {
               openAddModal();
             }}
           >
-            Add Restaurant Card
+            Add Menu Item
           </button>
           {menuCards.length > 0 && (
             <button
               className="ml-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
               onClick={() => deleteMenuCard(menuCards.length - 1)}
             >
-              Delete Restaurant Card
+              Delete Menu Item 
             </button>
           )}
         </div>
@@ -82,7 +82,7 @@ export default function MenuManagement() {
       {isAddModalOpen && (
         <div className="fixed z-10 inset-0 overflow-y-auto flex justify-center items-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg">
-            <h2 className="text-lg font-semibold mb-4">Add New Restaurant</h2>
+            <h2 className="text-lg font-semibold mb-4">Add New Menu Item</h2>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Image Link:
