@@ -96,9 +96,10 @@ export default function OrderManagement() {
       <div>
         <ResturantNavbar />
       </div>
-      <div className="ml-[10%] mt-[2%] w-auto">
+      <div className="ml-[10%] flex-grow mt-[2%] w-auto">
+        <h1 className="text-xl text-white">Order Management</h1>
         {/* YAHA PE CODE LIKHIYO */}
-        <div className="mt-[10%] justify-center align-center">
+        <div className="mt-[5%] justify-center align-center">
           <section className="mt-10 flex justify-center items-center">
             <form onSubmit={handleSubmit} className="flex">
               <input
@@ -121,11 +122,11 @@ export default function OrderManagement() {
             </form>
           </section>
 
-          <div className="mt-10 flex">
+          <div className="mt-10 flex justify-center align-center">
             {stagesTasks.map((tasks, i) => {
               return (
                 <div
-                  className="bg-white rounded-lg p-4 ml-5 mt-0 shadow-md"
+                  className="bg-white rounded-lg p-4 ml-5 mr-6 mt-0 shadow-md w-full max-w-7xl"
                   key={`${i}`}
                 >
                   <div>
@@ -147,7 +148,7 @@ export default function OrderManagement() {
                               </span>
                               <div className="flex">
                                 <button
-                                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-l mr-1"
+                                  className=" hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-l mr-1"
                                   data-testid={`${task.name
                                     .split(" ")
                                     .join("-")}-back`}
@@ -157,7 +158,7 @@ export default function OrderManagement() {
                                   <FaArrowAltCircleLeft />
                                 </button>
                                 <button
-                                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-r mr-1"
+                                  className="hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-r mr-1"
                                   data-testid={`${task.name
                                     .split(" ")
                                     .join("-")}-forward`}
