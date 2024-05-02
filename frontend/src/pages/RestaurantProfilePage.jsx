@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { change_user_role } from "../reducers/user";
 import { useNavigate } from "react-router-dom";
 
-export default function ProfilePage() {
+export default function RestaurantProfilePage() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
