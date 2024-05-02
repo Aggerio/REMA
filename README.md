@@ -11,3 +11,29 @@ REMA is a comprehensive web application designed to revolutionize the way custom
 
   ![image](https://github.com/Aggerio/REMA/assets/113780507/603c88f1-de39-488a-a4ac-5314e51fb360)
 
+# Running the Project
+
+## Download the project -->
+```bash
+git clone https://github.com/Aggerio/REMA
+```
+
+## Frontend --> 
+```bash
+ cd frontend 
+ npm i 
+ npm run dev
+```
+
+To run the backend setup your ENV file with a variable named MONGO_URI
+
+```text
+MONGO_URI=<mongodb url>
+```
+
+## Backend--> 
+```bash
+ cd backend 
+ npm i 
+ npm run dev
+```
