@@ -6,7 +6,11 @@ export default function MenuManagement() {
         <ResturantNavbar/>
       </div>
       <div className="ml-[10%] mt-[2%]">
-        {/* YAHA PE CODE LIKHIYO */}
+        <h1 className="text-2xl text-white"> Menu Management</h1>
+
+        <div className="mt-[5%] justify-center align-center">
+
+        </div>
         </div>
     </div>
   );

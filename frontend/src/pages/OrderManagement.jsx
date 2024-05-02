@@ -1,6 +1,7 @@
 import ResturantNavbar from "../components/RestaurantNavbar";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+
+import { FaArrowLeft } from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -97,7 +98,7 @@ export default function OrderManagement() {
         <ResturantNavbar />
       </div>
       <div className="ml-[10%] flex-grow mt-[2%] w-auto">
-        <h1 className="text-xl text-white">Order Management</h1>
+        <h1 className="text-2xl text-white">Order Management</h1>
         {/* YAHA PE CODE LIKHIYO */}
         <div className="mt-[5%] justify-center align-center">
           <section className="mt-10 flex justify-center items-center">
@@ -155,7 +156,9 @@ export default function OrderManagement() {
                                   disabled={i === 0}
                                   onClick={() => arrowBack(task, i, index)}
                                 >
-                                  <FaArrowAltCircleLeft />
+                                    <div className="bg-red-500">
+                                  <FaArrowLeft />
+</div>
                                 </button>
                                 <button
                                   className="hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded-r mr-1"
@@ -165,7 +168,7 @@ export default function OrderManagement() {
                                   disabled={i === 3}
                                   onClick={() => arrowForward(task, i, index)}
                                 >
-                                    <div className="bg-green-500"><FaArrowAltCircleRight />
+                                    <div className="bg-green-500"><FaArrowRight />
 </div>
                                   
                                 </button>

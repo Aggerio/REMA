@@ -12,29 +12,29 @@ const Home = () => {
         <div className={styles.nav}>
           <ul type="none" className={styles.nav1}>
             <li className={styles.logo}>
-              <a className={styles.linking} href="#">
+              <a className={styles.linking} href="/home">
                 REMA
               </a>
             </li>
             <li className={styles.li}>
               <ul type="none" className={styles.nav2}>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">
+                  <a className={styles.linking} href="/offers">
                     Offers
                   </a>
                 </li>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">
+                  <a className={styles.linking} href="/restaurant/1">
                     Order
                   </a>
                 </li>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">
+                  <a className={styles.linking} href="/cart">
                     Cart
                   </a>
                 </li>
                 <li className={styles.li}>
-                  <a className={styles.linking} href="#">
+                  <a className={styles.linking} href="/login">
                     Login
                   </a>
                 </li>
@@ -79,13 +79,20 @@ const Home = () => {
               <button
                 onClick={() => {
                   navigate("/restaurants");
-                  useDispatch(change_nav('Restaurants'));
+                  useDispatch(change_nav("Restaurants"));
                 }}
                 className={styles.book_btn}
               >
                 Dive in &#8594;
               </button>
-              <button className={styles.menu_btn}>Login</button>
+              <button
+                className={styles.menu_btn}
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
+                Login
+              </button>
             </div>
             <div className={styles.second}></div>
           </div>
