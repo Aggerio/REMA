@@ -15,7 +15,7 @@ export default function RestaurantProfilePage() {
   return (
     <div className="bg-[#393c49] w-screen h-screen flex overflow-y-auto">
       <div>
-        <ResturantNavbar/>
+        {/* <ResturantNavbar/> */}
       </div>
       <div className="ml-[10%] mt-[2%] flex flex-col items-center justify-center w-full">
         <div className="bg-[#1F1D2B] rounded-lg shadow-lg p-8 max-w-md text-white">

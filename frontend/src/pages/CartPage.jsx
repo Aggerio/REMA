@@ -1,4 +1,5 @@
 import CentralNavbar from "../components/UserNavbar";
+import styles from "./RestoPage.module.css";
 
 import CartCompo from "../components/CartCompo";
 import Offer from "../components/Offers";
@@ -37,7 +38,11 @@ export default function CartPage() {
         <div className="text-[#1f1d2b] bg-[#1f1d2b] sticky bottom-0">
           vsvn
         </div>
+        <div className={styles.tocart}>
+            <button className={styles.tocart_btn}>Continue to Payment</button>
+          </div>
       </div>
+      
     </div>
   );
 }
