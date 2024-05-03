@@ -4,13 +4,17 @@ import { change_user_role } from "../reducers/user";
 import { useNavigate } from "react-router-dom";
 
 export default function ProfilePage() {
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-    function signOut(){
-        dispatch(change_user_role(""));
-        navigate('/home');
-    }
+  function signOut() {
+    localStorage.clear();
+
+    dispatch(change_user_role(""));
+    // window.location.replace("https://Google.com");
+    navigate("/login", { replace: true });
+    console.log("logged out: ");
+  }
 
   return (
     <div className="bg-[#393c49] w-screen h-screen flex overflow-y-auto">
@@ -29,7 +33,10 @@ export default function ProfilePage() {
             <p className="text-gray-100">john.doe@example.com</p>
           </div>
           <div className="mb-4">
-            <label htmlFor="fullName" className="block text-gray-200 font-bold mb-2">
+            <label
+              htmlFor="fullName"
+              className="block text-gray-200 font-bold mb-2"
+            >
               Full Name
             </label>
             <input
@@ -41,7 +48,10 @@ export default function ProfilePage() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-200 font-bold mb-2">
+            <label
+              htmlFor="email"
+              className="block text-gray-200 font-bold mb-2"
+            >
               Email
             </label>
             <input
@@ -68,8 +78,9 @@ export default function ProfilePage() {
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
               Edit Profile
             </button>
-            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            onClick={signOut()}
+            <button
+              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              onClick={signOut}
             >
               Sign Out
             </button>
